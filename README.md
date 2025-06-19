@@ -41,4 +41,13 @@ On push to master, GitHub Actions will:
 - EC2_SSH_KEY
 
 ### 🌐 Live Demo
-Access it here: http://<your-ec2-ip>
+Access it here: http://your-ec2-ip
+
+### ⚠️ Note: The EC2 instance is currently stopped to save AWS billing charges.  
+To run this project, you can either:
+- Start your own EC2 and add its IP to GitHub Secrets
+- Or use Docker locally with:
+```bash
+  docker build -t flask-cicd .
+  docker run -p 5000:5000 flask-cicd
+```
