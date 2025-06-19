@@ -31,14 +31,14 @@ docker run -p 5000:5000 flask-cicd
 
 ### 3. GitHub Actions (CI/CD)
 On push to master, GitHub Actions will:
--Build & push Docker image to Docker Hub
--SSH into EC2 and deploy container
+- Build & push Docker image to Docker Hub
+- SSH into EC2 and deploy container
 
 ### 🔐 Secrets Used
--DOCKER_USERNAME
--DOCKER_PASSWORD
--EC2_HOST
--EC2_SSH_KEY
+- DOCKER_USERNAME
+- DOCKER_PASSWORD
+- EC2_HOST
+- EC2_SSH_KEY
 
 ### 🌐 Live Demo
 Access it here: http://<your-ec2-ip>
